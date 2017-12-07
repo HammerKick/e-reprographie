@@ -2,8 +2,15 @@
 $FichierValide = TRUE;
 $maxsize = $_POST['MAX_FILE_SIZE'];
 $message = "fichier bien envoyé";
+if(isset($_POST['couverture']))
+{
+	$couverture = $_POST['couverture'];
+}
+else
+{
+	$couverture = "none";
+}
 
-$couverture = $_POST['couverture'];
 $papier = $_POST['papier'];
 $rectoverso = $_POST['rectoverso'];
 
@@ -20,15 +27,15 @@ $id_membre = 'test';
 //$id_membre = $_POST[''];	//à changer afin de récupérer le nom du user
 $titre = $_POST['titre']; //contient le titre de l'envoi de l'utilisateur
 
-echo $id_membre;
+echo "id membre : ".$id_membre;
 echo "<br>";
-echo $titre;
+echo "titre : ".$titre;
 echo "<br>";
-echo $couverture;
+echo "couverture : ".$couverture;
 echo "<br>";
-echo $papier;
+echo "papier : ".$papier;	// !!! renvoit toujours on
 echo "<br>";
-echo $rectoverso;
+echo "rectoverso : ".$rectoverso;	// !!! renvoit toujours on
 
 //******* Mettre ici l'envoi de données à la base
 

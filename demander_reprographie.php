@@ -9,19 +9,19 @@
 <nav class="nav navbar-default navbar-fixed-top">
 <ul class="nav">
   <li class="nav-item">
-    <a class="nav-link active" href="index.php">Accueil</a>
+    <a class="nav-link active" href="Tindex.php">Accueil</a>
   </li>
   <li class="nav-item">
-	<a class="nav-link" href="#">Se connecter</a>
+	<a class="nav-link" href="se_connecter.php">Se connecter</a>
 	</li>
   <li class="nav-item">
     <a class="nav-link" href="demander_reprographie.php">Demander une impression</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Liste des impressions</a>
+    <a class="nav-link" href="liste_impressions.php">Liste des impressions</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Statistiques</a>
+    <a class="nav-link" href="statistique.php">Statistiques</a>
   </li>
 </ul>
 </nav>
@@ -57,8 +57,8 @@
   <div class="form-group">
 	<label for="options">
 	Couverture ? <input type="checkbox" name="couverture" id="couverture"><br>
-	<label><strong>Couleurs :</strong></label> <input type="radio" name="papier" id="papierblanc"> <label id="papierblanc">Papier blanc</label> <input type="radio" name="papier" id="papiercouleur"> Papier couleur<br>
-	<label><strong>Sens :</strong></label> <input type="radio" name="rectoverso" id="recto"> Recto seulement <input type="radio" name="rectoverso" id="lesdeux"> Recto/Verso
+	<label><strong>Couleurs :</strong></label> <input type="radio" name="papier" id="papierblanc" value="1"> <label id="papierblanc">Papier blanc</label> <input type="radio" name="papier" id="papiercouleur" value="2"> Papier couleur<br>
+	<label><strong>Sens :</strong></label> <input type="radio" name="rectoverso" id="recto" value="1"> Recto seulement <input type="radio" name="rectoverso" id="lesdeux" value="2"> Recto/Verso
 	<br><br>
 	</label>
 	
